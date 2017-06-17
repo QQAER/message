@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ul id='panel_content'>
+       <li> 内容</li>
+    </ul>
+    <ul>
+        <li><a href="#">首页</a> 
+        <li><a href="#">下一页</a></li>
+        <li> <a href="#">上一页</a></li>
+        <li><a href="#">末页</a></li>
+    </ul>
+
+
+<script src="../bootstrap/js/jquery-1.11.3.js"></script>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            type:'get',
+            dataType:'json',
+            url:'../Date/page.php',
+            success:function(data){
+                console.log(data)
+            }
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+SET CHARSET UTF8;
+DROP DATABASE IF EXISTS my;
+CREATE DATABASE my CHARSET=UTF8;
+USE my;
+  CREATE TABLE mess_liu(
+      	pid INT PRIMARY KEY AUTO_INCREMENT, ##�Զ���������
+      	content text comment '内容',
+      	addtime varchar(64),
+      	title varchar(64)
+      );
+CREATE TABLE mess_user(
+		pid INT PRIMARY KEY AUTO_INCREMENT, ##�Զ���������
+		name varchar(64),
+		pwd varchar(64)
+);
+  insert into mess_liu values(null,'导入到数据库的字体多是乱码','2017-5-12 10:48:10','模式');
+  insert into mess_user values(null,'admin','admin');
+    insert into mess_user values(null,'lihaifeng','123456');

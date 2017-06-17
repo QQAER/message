@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>发布留言</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../Css/index.css"/>
+</head>
+<body>
+<!--导行条-->
+<nav class="navbar navbar-default" id="navbar"></nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-ms-12 col-xs-12">
+            <form action="../Date/liuyi.php" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" >标题</label>
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="标题" name="title">
+                    <div class="liuyu_top">
+                        <label for="inputEmail2" >内容</label>
+                        <textarea class="form-control" rows="10" id="inputEmail2" name="coneten"></textarea>
+                    </div>
+                    <input type="submit" value="发布留言"  class="btn btn-info liuyi_btn"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="../bootstrap/js/jquery-1.11.3.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $('#navbar').load('_header.html');
+</script>
+</body>
+</html>
